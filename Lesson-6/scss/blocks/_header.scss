@@ -1,0 +1,108 @@
+.header {
+    background-color: $black-bkg;
+    position: relative;
+}
+
+.header__nav--menu {
+    text-transform: uppercase;
+    margin-top: 36px;
+    margin-left: 34px;
+}
+
+.header__wrp {
+    display: flex;
+    align-items: center;
+    min-height: 75px;
+    justify-content: space-between;
+}
+
+.header__seach-icon {
+    fill: $white-color;
+}
+
+.header__seach-icon:hover {
+    fill: $white-color-hover;
+}
+
+.header__menu-burger {
+    display: flex;
+    align-items: center;
+}
+
+.header__burger {
+    border: none;
+    background-color: transparent;
+}
+
+.header__burger-icon {
+    fill: $white-color;
+}
+
+.header__burger-icon:hover,
+.header__burger-icon:focus {
+    fill: $white-color-hover;
+    cursor: pointer;
+    outline: none;
+}
+
+.header__burger-icon:active {
+    fill: $white-color-active;
+    cursor: pointer;
+    outline: none;
+}
+
+.header__contact-icon {
+    fill: $white-color;
+}
+
+.header__contact-icon:hover,
+.header__contact-icon:focus {
+    fill: $white-color-hover;
+}
+
+.header__contact-icon:active {
+    fill: $white-color-active;
+}
+
+.header__basket-icon {
+    fill: $white-color;
+}
+
+.header__basket-icon:hover,
+.header__basket-icon:focus {
+    fill: $white-color-hover;
+}
+
+.header__basket-icon:active {
+    fill: $white-color-active;
+}
+
+.header__nav {
+    position: absolute;
+    width: 200px;
+    min-height: 764px;
+    right: 0;
+    top: 75px;
+    background-color: $nav-color;
+    padding-left: 10px;
+    display: none;
+}
+
+.header__nav-list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.header__burger:hover+.header__nav,
+.header__burger:focus+.header__nav {
+    display: block;
+}
+
+.header__logo {
+    margin: 0 41px 0 0;
+}
+
+.header__link {
+    margin: 0 0 0 33px;
+}

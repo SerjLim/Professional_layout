@@ -1,0 +1,134 @@
+.product-container {
+    display: flex;
+}
+
+.product__title {
+    text-align: center;
+    margin-top: 76px;
+    font-size: 30px;
+    color: $black-bkg;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.product__sub-title {
+    text-align: center;
+    margin-bottom: 48px;
+    font-size: 14px;
+    color: $sub-title-color;
+    font-weight: 400;
+    line-height: 17px;
+    margin-top: 10px;
+}
+
+.product__list {
+    list-style-type: none;
+}
+
+.container-sale {
+    min-height: 200px;
+    width: 150px;
+    margin-bottom: 30px;
+}
+
+.product__item-img {
+    margin-right: 30px;
+    width: 360px;
+    height: 420px;
+    left: 230px;
+}
+
+.product__item--title {
+    text-transform: uppercase;
+    margin-top: 24px;
+    margin-bottom: 13px;
+}
+
+.product__item--cart {
+    min-height: 200px;
+    width: 360px;
+    margin-right: 30px;
+}
+
+.product__cart-wrapper {
+    position: relative;
+}
+
+.product__cart-wrapper--img {
+    width: 100%;
+    min-height: 420px;
+}
+
+.product__overlay {
+    width: 100%;
+    min-height: 420px;
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+}
+
+.product__button--cart {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: white 2px solid;
+    background-color: transparent;
+    color: white;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    text-align: center;
+    width: 138px;
+    justify-content: space-around;
+}
+
+
+/* Эффект наведения*/
+
+.product__overlay,
+.product__button--cart {
+    display: none;
+}
+
+.product__item--cart:hover .product__button--cart,
+.product__item--cart:hover .product__overlay {
+    display: block;
+}
+
+.product__item--text {
+    color: #5D5D5D;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 18px;
+}
+
+.product__item--price {
+    color: $price-color;
+    margin-bottom: 20px;
+}
+
+.product__all {
+    color: #FF6A6A;
+}
+
+.product__all--color {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    margin-top: 63px;
+    margin-bottom: 96px;
+    padding-top: 15px;
+    padding-bottom: 14px;
+    padding-right: 39px;
+    padding-left: 39px;
+    border: 1px solid $border--product;
+    text-decoration: none;
+    background-color: white;
+    color: #FF6A6A;
+}
+
+.product__all--color:hover {
+    background: #FF6A6A;
+    color: white;
+}
